@@ -1,0 +1,10 @@
+>> linear_reg and linear_reg_gp are the two examples of regression with standard fitting and gaussian processes. 
+>> synthetic_lc_generator.py is a toy model light curve simulator. it tries to create VVV style periodic variable LC
+    you can import this package like:
+
+import synthetic_lc_generator as lc_gen
+
+mag, magerr, time, class, period  = lc_gen.simulate_light_curve(seed_t, period, amplitude, cat_type, seed_m, other_pert=1, err_rescale=1, scatter_flag=1, contamination_flag=1)
+
+
+This code is nice for testing how good you are at finding periods. you can add or remove as much nboise and external effects to see when your fitting code fails.
